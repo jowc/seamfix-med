@@ -1,0 +1,31 @@
+.header {
+  @apply flex flex-col overflow-hidden;
+
+  &-spacing {
+    @apply px-3 md:px-4 xl:px-0 xl:max-w-7xl mx-auto;
+
+    div {
+      @apply text-white text-2xl font-medium;
+    }
+  }
+
+  &-container {
+    @apply flex justify-between items-baseline;
+
+    &-links {
+      @apply flex space-x-3 text-base w-auto cursor-pointer;
+
+      div {
+        @apply px-2 pb-2 md:pb-5;
+      }
+    }
+
+    &-btn {
+      @apply hidden md:block md:w-1/4;
+    }
+  }
+}
+
+.active {
+  @apply border-b-4 border-blue-300;
+}

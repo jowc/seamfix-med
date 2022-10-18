@@ -44,4 +44,25 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-thin;
+  }
+  h2 {
+    @apply text-base;
+  }
+}
+
+.smart {
+  &-container {
+    @apply px-3 md:px-4 xl:px-0 xl:max-w-7xl mx-auto;
+  }
+
+  &-btn {
+    @apply bg-blue-300 py-2 md:py-3 px-4 md:px-6 text-sm md:text-base rounded-sm;
+  }
 }
