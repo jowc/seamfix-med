@@ -9,6 +9,7 @@ import { DefaultsModule } from './defaults/defaults.module';
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -63,6 +63,6 @@ body {
   }
 
   &-btn {
-    @apply bg-blue-300 py-2 md:py-3 px-4 md:px-6 text-sm md:text-base rounded-sm;
+    @apply bg-blue-300 py-2 md:py-3 px-4 md:px-6 text-sm md:text-base capitalize rounded-sm;
   }
 }

@@ -1,5 +1,5 @@
 .header {
-  @apply flex flex-col overflow-hidden;
+  @apply flex flex-col capitalize overflow-hidden fixed top-0 w-full;
 
   &-spacing {
     @apply px-3 md:px-4 xl:px-0 xl:max-w-7xl mx-auto;

@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { ServerComponent } from './server/server.component';
 import { ApplicationComponent } from './application/application.component';
 import { HomeComponent } from './home/home.component';
+import { CardsComponent } from '../components/cards/cards.component';
+
 
 
 
@@ -11,7 +13,8 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     ServerComponent,
     ApplicationComponent,
-    HomeComponent
+    HomeComponent,
+    CardsComponent
   ],
   imports: [
     CommonModule
