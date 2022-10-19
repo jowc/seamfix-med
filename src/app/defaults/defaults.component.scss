@@ -1,0 +1,7 @@
+.smart-main {
+  @apply bg-gray-100 h-screen overflow-y-auto;
+
+  div {
+    @apply py-8 mt-32;
+  }
+}

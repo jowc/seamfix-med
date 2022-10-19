@@ -1,0 +1,165 @@
+<div class="smart-server">
+
+  <section class="smart-server-filter">
+
+    <div class="smart-server-filter-1">
+
+      <app-table-search></app-table-search>
+      <app-table-select title="Active Status" [list]="options">
+      </app-table-select>
+
+    </div>
+
+    <div>
+      <button class="smart-btn">create server</button>
+    </div>
+
+
+
+  </section>
+
+  <section class="smart-server-table">
+
+    <section class="table-head">
+
+      <div class="flex items-center space-x-4">
+        <section class="flex items-center space-x-1">
+          <img class="w-6 h-6" src="assets/icons8-pdf-64.png">
+          <img class="w-6 h-6" src="assets/icons8-xlsx-64.png">
+        </section>
+        <section class="text-gray-500">
+          showing 10 of 500 entries.
+        </section>
+      </div>
+
+    </section>
+
+    <section class="table-body">
+
+      <table class="table-auto min-w-full">
+
+        <thead class="">
+          <tr>
+            <th scope="col">
+              SN
+            </th>
+            <th scope="col">
+              Server Name
+            </th>
+            <th scope="col">
+              Ip Address
+            </th>
+            <th scope="col">
+              CPU(%)
+            </th>
+            <th scope="col">
+              Memory(%)
+            </th>
+            <th scope="col">
+              Storage(%)
+            </th>
+            <th scope="col">
+              Action
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td class="table-SN">1</td>
+            <td class="table-items">
+              <div class="h-3 w-3 inline-block bg-green-500 rounded-full mr-3"></div>
+              <span>Application name goes here</span>
+            </td>
+            <td class="table-items">
+              123.2.435.21
+            </td>
+            <td class="table-items">
+              54.4
+            </td>
+            <td class="table-items">
+              43.5
+            </td>
+            <td class="table-items">
+              24
+            </td>
+            <td class="table-items flex items-center space-x-3">
+              <button class="smart-btn">edit</button>
+              <img class="w-5 h-5 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-SN">2</td>
+            <td class="table-items">
+              <div class="h-3 w-3 inline-block bg-green-500 rounded-full mr-3"></div>
+              <span>Application name goes here</span>
+            </td>
+            <td class="table-items">
+              123.12.123.1
+            </td>
+            <td class="table-items">
+              34.6
+            </td>
+            <td class="table-items">
+              75.6
+            </td>
+            <td class="table-items">
+              90.2
+            </td>
+            <td class="table-items flex items-center space-x-3">
+              <button class="smart-btn">edit</button>
+              <img class="w-5 h-5 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-SN">3</td>
+            <td class="table-items">
+              <div class="h-3 w-3 inline-block bg-red-500 rounded-full mr-3"></div>
+              <span>Application name goes here</span>
+            </td>
+            <td class="table-items">
+              10.132.12.4
+            </td>
+            <td class="table-items">
+              45.8
+            </td>
+            <td class="table-items">
+              89.4
+            </td>
+            <td class="table-items">
+              2
+            </td>
+            <td class="table-items flex items-center space-x-3">
+              <button class="smart-btn">edit</button>
+              <img class="w-5 h-5 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
+            </td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+      <section class="table-footer">
+
+        <div>Previous</div>
+        <section class="flex flex-wrap gap-3 items-center">
+          <div class="pagination-nums bg-blue-300 font-semibold">1</div>
+          <div class="pagination-nums ">2</div>
+          <div>
+            <img class="w-5 h-5 rotate-90 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
+          </div>
+          <div class="pagination-nums ">50</div>
+        </section>
+        <div>Next</div>
+
+
+      </section>
+
+    </section>
+
+  </section>
+
+</div>

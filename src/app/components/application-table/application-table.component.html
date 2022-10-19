@@ -1,0 +1,177 @@
+<div class="smart-app">
+
+  <section class="smart-app-filter">
+
+    <div class="smart-app-filter-1">
+
+      <app-table-search></app-table-search>
+      <app-table-select title="Active Status" [list]="options">
+      </app-table-select>
+
+    </div>
+
+    <div>
+      <button class="smart-btn">add application</button>
+    </div>
+
+
+
+  </section>
+
+  <section class="smart-app-table">
+
+    <section class="table-head">
+
+      <div class="flex items-center space-x-4">
+        <section class="flex items-center space-x-1">
+          <img class="w-6 h-6" src="assets/icons8-pdf-64.png">
+          <img class="w-6 h-6" src="assets/icons8-xlsx-64.png">
+        </section>
+        <section class="text-gray-500">
+          showing 10 of 500 entries.
+        </section>
+      </div>
+
+    </section>
+
+    <section class="table-body">
+
+      <table class="table-auto min-w-full">
+
+        <thead class="">
+          <tr>
+            <th scope="col">
+              SN
+            </th>
+            <th scope="col">
+              Application Name
+            </th>
+            <th scope="col">
+              Application Type
+            </th>
+            <th scope="col">
+              Application DSCS
+            </th>
+            <th scope="col">
+              Application Port
+            </th>
+            <th scope="col">
+              End point
+            </th>
+            <th scope="col">
+              Host/Server
+            </th>
+            <th scope="col">
+              Action
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td class="table-SN">1</td>
+            <td class="table-items">
+              <div class="h-3 w-3 inline-block bg-green-500 rounded-full mr-3"></div>
+              <span>Application name goes here</span>
+            </td>
+            <td class="table-items">
+              Application type
+            </td>
+            <td class="table-items">
+              Application DSCS
+            </td>
+            <td class="table-items">
+              Application port
+            </td>
+            <td class="table-items">
+              End point
+            </td>
+            <td class="table-items">
+              10.198.23.5
+            </td>
+            <td class="table-items flex items-center space-x-3">
+              <button class="smart-btn">edit</button>
+              <img class="w-5 h-5 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-SN">2</td>
+            <td class="table-items">
+              <div class="h-3 w-3 inline-block bg-green-500 rounded-full mr-3"></div>
+              <span>Application name goes here</span>
+            </td>
+            <td class="table-items">
+              2 Servers
+            </td>
+            <td class="table-items">
+              Application DSCS
+            </td>
+            <td class="table-items">
+              Application port
+            </td>
+            <td class="table-items">
+              End point
+            </td>
+            <td class="table-items">
+              10.198.23.5
+            </td>
+            <td class="table-items flex items-center space-x-3">
+              <button class="smart-btn">edit</button>
+              <img class="w-5 h-5 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
+            </td>
+          </tr>
+
+          <tr>
+            <td class="table-SN">3</td>
+            <td class="table-items">
+              <div class="h-3 w-3 inline-block bg-red-500 rounded-full mr-3"></div>
+              <span>Application name goes here</span>
+            </td>
+            <td class="table-items">
+              Application type
+            </td>
+            <td class="table-items">
+              Application DSCS
+            </td>
+            <td class="table-items">
+              Application port
+            </td>
+            <td class="table-items">
+              End point
+            </td>
+            <td class="table-items">
+              10.198.23.5
+            </td>
+            <td class="table-items flex items-center space-x-3">
+              <button class="smart-btn">edit</button>
+              <img class="w-5 h-5 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
+            </td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+      <section class="table-footer">
+
+        <div>Previous</div>
+        <section class="flex flex-wrap gap-3 items-center">
+          <div class="pagination-nums bg-blue-300 font-semibold">1</div>
+          <div class="pagination-nums ">2</div>
+          <div>
+            <img class="w-5 h-5 rotate-90 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
+          </div>
+          <div class="pagination-nums ">50</div>
+        </section>
+        <div>Next</div>
+
+
+      </section>
+
+    </section>
+
+  </section>
+
+</div>
