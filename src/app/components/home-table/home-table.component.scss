@@ -8,6 +8,10 @@
   &-table {
     @apply border-2 border-gray-100 rounded w-full overflow-auto;
 
+    .table-head {
+      @apply flex lg:justify-end py-4 px-8;
+    }
+
     table {
       @apply table-auto min-w-full;
       thead {
@@ -27,6 +31,13 @@
             @apply text-sm text-gray-900 font-normal px-6 py-4 whitespace-nowrap;
           }
         }
+      }
+    }
+
+    .table-footer {
+      @apply flex justify-center items-center gap-3 py-5 px-8 text-gray-500 text-base;
+      .pagination-nums {
+        @apply h-8 w-8 flex justify-center items-center rounded-full;
       }
     }
   }
