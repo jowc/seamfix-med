@@ -1,12 +1,16 @@
-.smart-home {
-  @apply grid gap-y-4;
+.smart-server {
+  @apply grid gap-y-8;
 
   &-filter {
-    @apply flex flex-wrap items-center gap-5;
+    @apply flex flex-wrap items-center justify-between;
+
+    &-1 {
+      @apply flex flex-wrap items-center gap-5;
+    }
   }
 
   &-table {
-    @apply border-2 border-gray-100 rounded w-full overflow-auto;
+    @apply rounded w-full overflow-auto;
 
     .table-head {
       @apply flex lg:justify-end py-4 px-8;

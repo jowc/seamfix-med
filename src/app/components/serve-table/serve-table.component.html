@@ -1,18 +1,24 @@
-<div class="smart-home">
+<div class="smart-server">
 
-  <section class="smart-home-filter">
+  <section class="smart-server-filter">
 
-    <app-table-search></app-table-search>
-    <app-table-select title="All Application" [list]="options">
-    </app-table-select>
-    <app-table-select title="All Servers" [list]="options2">
-    </app-table-select>
-    <app-table-select title="Health Check Status" [list]="options3">
-    </app-table-select>
+    <div class="smart-server-filter-1">
+
+      <app-table-search></app-table-search>
+      <app-table-select title="Active Status" [list]="options">
+      </app-table-select>
+
+    </div>
+
+    <div>
+      <button class="smart-btn">create server</button>
+    </div>
+
+
 
   </section>
 
-  <section class="smart-home-table">
+  <section class="smart-server-table">
 
     <section class="table-head">
 
@@ -38,83 +44,100 @@
               SN
             </th>
             <th scope="col">
-              Application
+              Server Name
             </th>
             <th scope="col">
-              Server Mapped
+              Ip Address
             </th>
             <th scope="col">
-              Last Scan Date
+              CPU(%)
             </th>
             <th scope="col">
-              Status
+              Memory(%)
+            </th>
+            <th scope="col">
+              Storage(%)
             </th>
             <th scope="col">
               Action
             </th>
           </tr>
         </thead>
+
         <tbody>
+
           <tr>
             <td class="table-SN">1</td>
             <td class="table-items">
               <div class="h-3 w-3 inline-block bg-green-500 rounded-full mr-3"></div>
               <span>Application name goes here</span>
             </td>
-            <td class="table-items !text-blue-400 !font-medium">
-              3 Servers
+            <td class="table-items">
+              123.2.435.21
             </td>
             <td class="table-items">
-              11/12/20 3:45:54pm
+              54.4
             </td>
             <td class="table-items">
-              <img class="w-5 h-5" src="assets/icons8-check-circle.svg">
+              43.5
+            </td>
+            <td class="table-items">
+              24
             </td>
             <td class="table-items flex items-center space-x-3">
-              <button class="smart-btn">View Result</button>
+              <button class="smart-btn">edit</button>
               <img class="w-5 h-5 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
             </td>
           </tr>
+
           <tr>
             <td class="table-SN">2</td>
             <td class="table-items">
               <div class="h-3 w-3 inline-block bg-green-500 rounded-full mr-3"></div>
               <span>Application name goes here</span>
             </td>
-            <td class="table-items !text-blue-400 !font-medium">
-              2 Servers
+            <td class="table-items">
+              123.12.123.1
             </td>
             <td class="table-items">
-              11/12/20 3:45:21pm
+              34.6
             </td>
             <td class="table-items">
-              <img class="w-5 h-5" src="assets/icons8-warning-48.png">
+              75.6
+            </td>
+            <td class="table-items">
+              90.2
             </td>
             <td class="table-items flex items-center space-x-3">
-              <button class="smart-btn">View Result</button>
+              <button class="smart-btn">edit</button>
               <img class="w-5 h-5 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
             </td>
           </tr>
+
           <tr>
             <td class="table-SN">3</td>
             <td class="table-items">
               <div class="h-3 w-3 inline-block bg-red-500 rounded-full mr-3"></div>
               <span>Application name goes here</span>
             </td>
-            <td class="table-items !text-blue-400 !font-medium">
-              3 Servers
+            <td class="table-items">
+              10.132.12.4
             </td>
             <td class="table-items">
-              11/12/20 3:45:32pm
+              45.8
             </td>
             <td class="table-items">
-              <img class="w-5 h-5" src="assets/icons8-check-circle.svg">
+              89.4
+            </td>
+            <td class="table-items">
+              2
             </td>
             <td class="table-items flex items-center space-x-3">
-              <button class="smart-btn">View Result</button>
+              <button class="smart-btn">edit</button>
               <img class="w-5 h-5 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
             </td>
           </tr>
+
         </tbody>
 
       </table>

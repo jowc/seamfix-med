@@ -1,18 +1,24 @@
-<div class="smart-home">
+<div class="smart-app">
 
-  <section class="smart-home-filter">
+  <section class="smart-app-filter">
 
-    <app-table-search></app-table-search>
-    <app-table-select title="All Application" [list]="options">
-    </app-table-select>
-    <app-table-select title="All Servers" [list]="options2">
-    </app-table-select>
-    <app-table-select title="Health Check Status" [list]="options3">
-    </app-table-select>
+    <div class="smart-app-filter-1">
+
+      <app-table-search></app-table-search>
+      <app-table-select title="Active Status" [list]="options">
+      </app-table-select>
+
+    </div>
+
+    <div>
+      <button class="smart-btn">add application</button>
+    </div>
+
+
 
   </section>
 
-  <section class="smart-home-table">
+  <section class="smart-app-table">
 
     <section class="table-head">
 
@@ -38,83 +44,112 @@
               SN
             </th>
             <th scope="col">
-              Application
+              Application Name
             </th>
             <th scope="col">
-              Server Mapped
+              Application Type
             </th>
             <th scope="col">
-              Last Scan Date
+              Application DSCS
             </th>
             <th scope="col">
-              Status
+              Application Port
+            </th>
+            <th scope="col">
+              End point
+            </th>
+            <th scope="col">
+              Host/Server
             </th>
             <th scope="col">
               Action
             </th>
           </tr>
         </thead>
+
         <tbody>
+
           <tr>
             <td class="table-SN">1</td>
             <td class="table-items">
               <div class="h-3 w-3 inline-block bg-green-500 rounded-full mr-3"></div>
               <span>Application name goes here</span>
             </td>
-            <td class="table-items !text-blue-400 !font-medium">
-              3 Servers
+            <td class="table-items">
+              Application type
             </td>
             <td class="table-items">
-              11/12/20 3:45:54pm
+              Application DSCS
             </td>
             <td class="table-items">
-              <img class="w-5 h-5" src="assets/icons8-check-circle.svg">
+              Application port
+            </td>
+            <td class="table-items">
+              End point
+            </td>
+            <td class="table-items">
+              10.198.23.5
             </td>
             <td class="table-items flex items-center space-x-3">
-              <button class="smart-btn">View Result</button>
+              <button class="smart-btn">edit</button>
               <img class="w-5 h-5 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
             </td>
           </tr>
+
           <tr>
             <td class="table-SN">2</td>
             <td class="table-items">
               <div class="h-3 w-3 inline-block bg-green-500 rounded-full mr-3"></div>
               <span>Application name goes here</span>
             </td>
-            <td class="table-items !text-blue-400 !font-medium">
+            <td class="table-items">
               2 Servers
             </td>
             <td class="table-items">
-              11/12/20 3:45:21pm
+              Application DSCS
             </td>
             <td class="table-items">
-              <img class="w-5 h-5" src="assets/icons8-warning-48.png">
+              Application port
+            </td>
+            <td class="table-items">
+              End point
+            </td>
+            <td class="table-items">
+              10.198.23.5
             </td>
             <td class="table-items flex items-center space-x-3">
-              <button class="smart-btn">View Result</button>
+              <button class="smart-btn">edit</button>
               <img class="w-5 h-5 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
             </td>
           </tr>
+
           <tr>
             <td class="table-SN">3</td>
             <td class="table-items">
               <div class="h-3 w-3 inline-block bg-red-500 rounded-full mr-3"></div>
               <span>Application name goes here</span>
             </td>
-            <td class="table-items !text-blue-400 !font-medium">
-              3 Servers
+            <td class="table-items">
+              Application type
             </td>
             <td class="table-items">
-              11/12/20 3:45:32pm
+              Application DSCS
             </td>
             <td class="table-items">
-              <img class="w-5 h-5" src="assets/icons8-check-circle.svg">
+              Application port
+            </td>
+            <td class="table-items">
+              End point
+            </td>
+            <td class="table-items">
+              10.198.23.5
             </td>
             <td class="table-items flex items-center space-x-3">
-              <button class="smart-btn">View Result</button>
+              <button class="smart-btn">edit</button>
               <img class="w-5 h-5 cursor-pointer" src="assets/icons8-menu-vertical-24.png">
             </td>
           </tr>
+
         </tbody>
 
       </table>
