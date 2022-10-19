@@ -39,7 +39,7 @@ $smart-med-theme: mat.define-light-theme(
 
 html,
 body {
-  height: 100%;
+  @apply h-full text-base;
 }
 body {
   margin: 0;
@@ -63,6 +63,6 @@ body {
   }
 
   &-btn {
-    @apply bg-blue-300 py-2 md:py-3 px-4 md:px-6 text-sm md:text-base capitalize rounded-sm;
+    @apply bg-blue-300 py-2 md:py-2 px-4 md:px-4 text-sm font-normal md:text-base capitalize rounded;
   }
 }

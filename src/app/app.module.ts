@@ -8,8 +8,7 @@ import { DefaultsModule } from './defaults/defaults.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-
+    AppComponent
   ],
   imports: [
     BrowserModule,
