@@ -61,6 +61,6 @@
 <mat-dialog-actions align="end">
   <div class="flex space-x-3">
     <button mat-dialog-close>Cancel</button>
-    <button class="smart-btn" cdkFocusInitial>Check Health Status</button>
+    <button class="smart-btn" (click)="openDialog()" cdkFocusInitial>Check Health Status</button>
   </div>
 </mat-dialog-actions>

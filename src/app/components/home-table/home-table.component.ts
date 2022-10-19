@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { HealthCheckResultSingleComponent } from 'src/app/shared/health-check-result-single/health-check-result-single.component';
 
 @Component({
   selector: 'app-home-table',
@@ -12,9 +14,13 @@ export class HomeTableComponent implements OnInit {
   options3: string[] = ['All status', 'Healthy', 'Critical']
 
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openDialog() {
+    this.dialog.open(HealthCheckResultSingleComponent)
   }
 
 }

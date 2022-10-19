@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { HealthCheckResultComponent } from '../health-check-result/health-check-result.component';
 import { HealthCheckComponent } from '../health-check/health-check.component';
 
 @Component({
@@ -16,6 +17,11 @@ export class HeaderComponent implements OnInit {
 
   openDialog() {
     const dialogRef = this.dialog.open(HealthCheckComponent)
+    return dialogRef
+  }
+
+  openDialogResult() {
+    const dialogRef = this.dialog.open(HealthCheckResultComponent)
     return dialogRef
   }
 

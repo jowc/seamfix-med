@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CreateServerComponent } from 'src/app/shared/create-server/create-server.component';
 
 @Component({
   selector: 'app-serve-table',
@@ -11,9 +13,13 @@ export class ServeTableComponent implements OnInit {
   options2: string[] = ['All server', 'server 1', 'server 2']
   options3: string[] = ['All status', 'Healthy', 'Critical']
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  createServer() {
+    this.dialog.open(CreateServerComponent)
   }
 
 }
