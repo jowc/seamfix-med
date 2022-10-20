@@ -17,7 +17,7 @@ export class ApplicationTableComponent implements OnInit {
   }
 
   addApp() {
-    this.dialog.open(CreateApplicationComponent)
+    this.dialog.open(CreateApplicationComponent, { width: '650px' })
   }
 
 }

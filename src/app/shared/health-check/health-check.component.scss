@@ -1,0 +1,10 @@
+.health-check {
+  @apply md:mx-20 my-2 md:my-5 text-base text-gray-700 grid gap-y-2 md:gap-y-5;
+  &-1 {
+    @apply flex flex-wrap md:flex-nowrap md:space-x-10;
+
+    .select-list {
+      @apply md:w-96 p-3 border-2 border-gray-200 rounded grid gap-y-2;
+    }
+  }
+}

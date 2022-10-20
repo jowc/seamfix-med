@@ -1,1 +1,45 @@
-<p>create-server works!</p>
+<h2 mat-dialog-title>Conduct Health Check</h2>
+<mat-dialog-content class="mat-typography">
+
+  <div class="server">
+
+    <section id="server-cont">
+
+      <h3>Enter Server Details</h3>
+
+      <section class="server-form">
+
+        <div class="server-form-input">
+          <label>Server Name</label>
+          <input type="text">
+        </div>
+
+        <div class="server-form-input">
+          <label>Server IP</label>
+          <input type="text">
+        </div>
+
+        <div class="server-form-input">
+          <label>CPU</label>
+          <input type="text">
+        </div>
+
+        <div class="server-form-input">
+          <label>Storage</label>
+          <input type="text">
+        </div>
+
+      </section>
+
+    </section>
+
+
+  </div>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <div class="flex space-x-3">
+    <button mat-dialog-close>Cancel</button>
+    <button class="smart-btn" cdkFocusInitial>Create</button>
+  </div>
+</mat-dialog-actions>

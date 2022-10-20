@@ -1,59 +1,70 @@
 <h2 mat-dialog-title>Conduct Health Check</h2>
 <mat-dialog-content class="mat-typography">
 
-  <div class="">
+  <div class="app">
 
-    <div>
+    <section id="app-cont">
 
-      <section>Applications</section>
+      <h3>Enter app Details</h3>
 
-      <section>
-        <div>
-          <input type="checkbox">
-          All Application
+      <section class="app-form">
+
+        <div class="app-form-input">
+          <label>Application Name</label>
+          <input type="text">
         </div>
-        <div>Select Application</div>
-        <div>
 
-          <div>
-            <input type="checkbox">
-            App Name 1
-          </div>
-          <div>
-            <input type="checkbox">
-            App Name 2
-          </div>
+        <div class="app-form-input">
+          <label>Application Type</label>
+          <input type="text">
+        </div>
+
+        <div class="app-form-input">
+          <label>Application DSCS</label>
+          <input type="text">
+        </div>
+
+        <div class="app-form-input">
+          <label>Application Port</label>
+          <input type="text">
+        </div>
+
+        <div class="app-form-input">
+          <label>Endpoint</label>
+          <input type="text">
+        </div>
+
+        <div class="app-form-input md:!items-start">
+
+          <label>Host/Server</label>
+
+          <section class="grid gap-y-3 w-full md:w-3/4 ">
+            <div>
+              <input type="checkbox" checked>
+              All Server
+            </div>
+            <div>Select Application</div>
+            <div class="select-list">
+
+              <div class="border-b-2 border-b-gray-100 pb-1">
+                <input class="" type="checkbox">
+                101.123.31.2
+              </div>
+              <div class="border-b-2 border-b-gray-100 pb-1">
+                <input class="" type="checkbox">
+                23.421.12.3
+              </div>
+
+            </div>
+          </section>
+
 
         </div>
+
       </section>
 
-    </div>
+    </section>
 
-    <div>
-
-      <section>Server</section>
-
-      <section>
-        <div>
-          <input type="checkbox">
-          All Application
-        </div>
-        <div>Select Application</div>
-        <div>
-
-          <div>
-            <input type="checkbox">
-            App Name 1
-          </div>
-          <div>
-            <input type="checkbox">
-            App Name 2
-          </div>
-
-        </div>
-      </section>
-
-    </div>
 
   </div>
 
@@ -61,6 +72,6 @@
 <mat-dialog-actions align="end">
   <div class="flex space-x-3">
     <button mat-dialog-close>Cancel</button>
-    <button class="smart-btn" cdkFocusInitial>Check Health Status</button>
+    <button class="smart-btn" mat-dialog-close cdkFocusInitial>Create</button>
   </div>
 </mat-dialog-actions>

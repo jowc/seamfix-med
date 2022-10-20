@@ -55,6 +55,10 @@ body {
   h2 {
     @apply text-base;
   }
+
+  input[type="checked"] {
+    @apply w-4 h-4 text-white rounded shadow-inner shadow-blue-400 focus:outline-none focus:ring-blue-500 focus:ring-2 focus:accent-blue-300 focus:text-white;
+  }
 }
 
 .smart {

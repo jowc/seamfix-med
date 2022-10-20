@@ -1,0 +1,26 @@
+.app {
+  @apply w-full text-base text-gray-700 font-medium;
+
+  #app-cont {
+    @apply grid md:px-8 py-4;
+  }
+
+  &-form {
+    @apply grid gap-y-3;
+
+    &-input {
+      @apply flex flex-col md:flex-row md:justify-between md:items-center md:space-x-2 w-full;
+
+      label {
+        @apply inline-block w-full md:w-1/4;
+      }
+      input[type="text"] {
+        @apply p-3 w-full md:w-3/4 border-2 border-gray-200 rounded;
+      }
+    }
+  }
+
+  .select-list {
+    @apply md:w-96 p-3 border-2 border-gray-200 rounded grid gap-y-2;
+  }
+}

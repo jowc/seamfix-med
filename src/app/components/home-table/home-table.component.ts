@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { DeactivateServerComponent } from 'src/app/shared/deactivate-server/deactivate-server.component';
 import { HealthCheckResultSingleComponent } from 'src/app/shared/health-check-result-single/health-check-result-single.component';
 
 @Component({
@@ -21,6 +22,10 @@ export class HomeTableComponent implements OnInit {
 
   openDialog() {
     this.dialog.open(HealthCheckResultSingleComponent)
+  }
+
+  openDeactivate() {
+    this.dialog.open(DeactivateServerComponent)
   }
 
 }
