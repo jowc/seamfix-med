@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
-import { HealthCheckComponent } from '../health-check/health-check.component';
 
 @Component({
   selector: 'app-health-check-result',
@@ -9,13 +7,9 @@ import { HealthCheckComponent } from '../health-check/health-check.component';
 })
 export class HealthCheckResultComponent implements OnInit {
 
-  constructor(public dialog: MatDialogRef<HealthCheckComponent>) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  closeAll() {
-    this.dialog.close()
   }
 
 }

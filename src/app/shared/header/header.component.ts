@@ -15,13 +15,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openDialog() {
+  openHealthDialog() {
     const dialogRef = this.dialog.open(HealthCheckComponent)
-    return dialogRef
-  }
-
-  openDialogResult() {
-    const dialogRef = this.dialog.open(HealthCheckResultComponent)
     return dialogRef
   }
 

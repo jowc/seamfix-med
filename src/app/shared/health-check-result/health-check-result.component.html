@@ -1,65 +1,104 @@
-<h2 mat-dialog-title>Conduct Health Check</h2>
+<h2 mat-dialog-title>Health Check Result</h2>
 <mat-dialog-content class="mat-typography">
 
-  <div class="">
+  <div class="health-result">
 
     <div>
 
-      <section>Applications</section>
+      <section class="health-result-box">
 
-      <section>
-        <div>
-          <input type="checkbox">
-          All Application
+        <div class="result-items">
+          <span>App name 1</span>
+          <div class="h-3 w-3 inline-block bg-green-500 rounded-full mr-3"></div>
         </div>
-        <div>Select Application</div>
-        <div>
 
-          <div>
-            <input type="checkbox">
-            App Name 1
-          </div>
-          <div>
-            <input type="checkbox">
-            App Name 2
-          </div>
-
+        <div class="result-items">
+          <span>End Point</span>
         </div>
+
+        <div class="result-items-box">
+          <div class="">
+            <img class="h-4 w-4" src="assets/icons8-right-arrow-64.png" alt="right arrow">
+            <span>Server 1</span>
+          </div>
+          <div class="h-3 w-3 inline-block bg-green-500 rounded-full"></div>
+        </div>
+
+        <div class="result-items-box">
+          <div class="">
+            <img class="w-4 h-4" src="assets/icons8-right-arrow-64.png" alt="right arrow">
+            <span>Server 1</span>
+          </div>
+          <img class="w-5 h-5" src="assets/icons8-cancel-67.png" alt="right arrow">
+        </div>
+
+        <div class="result-items-box">
+          <div class="">
+            <img class="w-4 h-4" src="assets/icons8-right-arrow-64.png" alt="right arrow">
+            <span>Server 1</span>
+          </div>
+          <img class="w-4 h-4" src="assets/icons8-check-mark-48.png" alt="right arrow">
+        </div>
+
+      </section>
+      <section class="flex items-center justify-end mt-2 text-blue-400">
+        <img class="h-3 w-3 mr-2" src="assets/icons8-refresh-16.png" alt="reload">
+        Refresh
       </section>
 
     </div>
 
     <div>
 
-      <section>Server</section>
+      <section class="health-result-box">
 
-      <section>
-        <div>
-          <input type="checkbox">
-          All Application
+        <div class="result-items">
+          <span>App name 1</span>
+          <div class="h-3 w-3 inline-block bg-green-500 rounded-full mr-3"></div>
         </div>
-        <div>Select Application</div>
-        <div>
 
-          <div>
-            <input type="checkbox">
-            App Name 1
-          </div>
-          <div>
-            <input type="checkbox">
-            App Name 2
-          </div>
-
+        <div class="result-items">
+          <span>End Point</span>
         </div>
+
+        <div class="result-items-box">
+          <div class="">
+            <img class="h-4 w-4" src="assets/icons8-right-arrow-64.png" alt="right arrow">
+            <span>Server 1</span>
+          </div>
+          <div class="h-3 w-3 inline-block bg-green-500 rounded-full"></div>
+        </div>
+
+        <div class="result-items-box">
+          <div class="">
+            <img class="w-4 h-4" src="assets/icons8-right-arrow-64.png" alt="right arrow">
+            <span>Server 1</span>
+          </div>
+          <img class="w-5 h-5" src="assets/icons8-cancel-67.png" alt="right arrow">
+        </div>
+
+        <div class="result-items-box">
+          <div class="">
+            <img class="w-4 h-4" src="assets/icons8-right-arrow-64.png" alt="right arrow">
+            <span>Server 1</span>
+          </div>
+          <img class="w-4 h-4" src="assets/icons8-check-mark-48.png" alt="right arrow">
+        </div>
+
+      </section>
+      <section class="flex items-center justify-end mt-2 text-blue-400">
+        <img class="h-3 w-3 mr-2" src="assets/icons8-refresh-16.png" alt="reload">
+        Refresh
       </section>
 
     </div>
+
 
   </div>
 
 </mat-dialog-content>
 <mat-dialog-actions align="end">
   <div class="flex space-x-3">
-    <button class="smart-btn" (click)="closeAll()" cdkFocusInitial>Cancel</button>
+    <button class="smart-btn" mat-dialog-close cdkFocusInitial>Cancel</button>
   </div>
 </mat-dialog-actions>

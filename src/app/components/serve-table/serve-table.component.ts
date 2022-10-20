@@ -19,7 +19,7 @@ export class ServeTableComponent implements OnInit {
   }
 
   createServer() {
-    this.dialog.open(CreateServerComponent)
+    this.dialog.open(CreateServerComponent, { width: '600px' })
   }
 
 }
